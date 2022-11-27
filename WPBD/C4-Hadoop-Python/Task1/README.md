@@ -11,7 +11,7 @@ If doesn't run, need to add permissions:
 <br />
 
 ## Script Description
-```||``` is used not to fail during future runs (second, third etc.)
+```;``` executes next command regardless of success or fail of the previous command (helps with multi-running)
 1. ```/usr/local/hadoop/bin/hdfs dfs -mkdir input/lab4``` - create Hadoop directory
 2. ```/usr/local/hadoop/bin/hdfs dfs -put /home/filip/scripts/lab4/short_story.txt``` - put data file into Hadoop
 3. ```/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.4.jar -files /home/filip/scripts/lab4/mapper.py -mapper "python3 mapper.py" -files /home/filip/scripts/lab4/reducer.py -reducer "python3 reducer.py" -input short_story.txt -output count_words``` - run Java streaming module with own mapper and reducer

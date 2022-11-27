@@ -1,8 +1,8 @@
-/usr/local/hadoop/bin/hdfs dfs -mkdir input/lab4 || \
-/usr/local/hadoop/bin/hdfs dfs -put /home/filip/scripts/lab4/short_story.txt || \
+/usr/local/hadoop/bin/hdfs dfs -mkdir input/lab4-1 ; \
+/usr/local/hadoop/bin/hdfs dfs -put short_story.txt input/lab4-1 ; \
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.4.jar \
 -file mapper.py -mapper "python3 mapper.py" \
 -file reducer.py -reducer "python3 reducer.py" \
--input short_story.txt \
--output count_words || \
-/usr/local/hadoop/bin/hdfs dfs -cat count_words_output.txt/* | sort -g -k 2,2 --reverse | head -n 10
+-input input/lab4-1/short_story.txt \
+-output output/lab4-1/count_words ; \
+/usr/local/hadoop/bin/hdfs dfs -cat output/lab4-1/count_words/* | sort -g -k 2,2 --reverse | head -n 10
