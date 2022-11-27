@@ -1,5 +1,5 @@
 ## Steps
-1. Run Haddop Services:
+1. Run Hadoop Services:
 ```/usr/local/hadoop/sbin/start-all.sh```
 
 2. Run script:
