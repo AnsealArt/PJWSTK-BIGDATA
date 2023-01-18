@@ -1,3 +1,5 @@
+# Version with user-provided Hadoop
+
 sudo apt install openjdk-11-jre-headless  && \
 wget https://downloads.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-without-hadoop.tgz && \
 tar -xvzf spark-3.3.1-bin-without-hadoop.tgz spark-3.3.1-bin-without-hadoop && \
