@@ -1,0 +1,23 @@
+ACCESS
+
+Governed Data for All Users
+
+Unite your siloed data and easily access governed and secure 1st-,  2nd- and 3rd-party data for previously unimagined insights.
+
+BUILD
+
+Bring Development to Data
+
+Leverage Snowflake's speed, concurrency, and extensibility to develop and run data applications, models, and pipelines where data lives.
+
+COLLABORATE
+
+Work Global & Cross-Cloud
+
+Work and collaborate seamlessly across multiple clouds no matter where data, applications, or your local and global business communities reside.
+
+MONETIZE
+
+Create New Revenue Streams
+
+Find new customers and increase revenue by offering data sets and data services, tools, and applications on Snowflake Marketplace.
